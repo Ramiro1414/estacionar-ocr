@@ -73,7 +73,7 @@ class ProcesadorPatente:
         """Función principal para procesar la imagen y enderezarla."""
         image = self.cargar_imagen(image_path)
         if image is None:
-            return "Invalid"
+            return None
 
         gray_image = self.convertir_a_grises(image)
         blurred_image = self.aplicar_desenfoque(gray_image)

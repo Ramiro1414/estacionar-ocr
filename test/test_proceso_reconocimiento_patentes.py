@@ -8,7 +8,7 @@ class TestDeteccionPatente(unittest.TestCase):
         self.procesador = ProcesadorTextoPlano()
 
     def test_deteccion_patente(self):
-        imagen_test_pasa_1 = "/home/alan/detector_patentes/imagenes_test/textoplano.png"
+        imagen_test_pasa_1 = "/home/alan/ocr-estacionar/imagenes_test/textoplano.png"
         
         texto_detectado = self.procesador.procesar_imagen(imagen_test_pasa_1)
         print("Texto detectado:\n", texto_detectado)

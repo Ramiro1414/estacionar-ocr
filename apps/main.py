@@ -3,7 +3,7 @@ from proceso_reconocimiento_patentes import ProcesadorPatente
 
 def main():
     procesador = ProcesadorPatente()
-    imagen_path = "/home/alan/detector_patentes/imagenes_patentes/auto-patente1.png"
+    imagen_path = "/home/alan/ocr-estacionar/imagenes_patentes/auto-patente1.png"
     patente = procesador.procesar_imagen(imagen_path)
     
     if patente:
